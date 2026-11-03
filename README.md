@@ -20,10 +20,12 @@ Karl Fashion merupakan website e-commerce untuk toko fashion online yang dikemba
 ## Pengelolaan Database
 Membuat dan mengelola database menggunakan phpMyAdmin serta mengintegrasikannya dengan aplikasi melalui SQL untuk mendukung penyimpanan dan pengelolaan data secara terstruktur.
 
+## Tujuan Proyek
+Proyek ini bertujuan menerapkan keterampilan pengembangan web dan pengelolaan database dalam membangun aplikasi e-commerce, sekaligus meningkatkan pemahaman mengenai PHP, SQL, dan pengembangan antarmuka website.
+
 ## Live Demo
 Website dapat diakses melalui tautan berikut:
 
 [Kunjungi Karl Fashion](https://karl-store.infinityfreeapp.com/)
 
-## Tujuan Proyek
-Proyek ini bertujuan menerapkan keterampilan pengembangan web dan pengelolaan database dalam membangun aplikasi e-commerce, sekaligus meningkatkan pemahaman mengenai PHP, SQL, dan pengembangan antarmuka website.
+
