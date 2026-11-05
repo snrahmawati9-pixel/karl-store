@@ -9,7 +9,7 @@ Karl Fashion merupakan website e-commerce untuk toko fashion online yang dikemba
 - Halaman admin untuk pengelolaan produk
 - Integrasi dan pengelolaan database
 
-## Teknologi yang Digunakan
+## Bahasa yang Digunakan
 - PHP
 - MySQL
 - HTML
