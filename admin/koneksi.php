@@ -1,7 +1,4 @@
-<?php
-$con = mysqli_connect("sql206.infinityfree.com","if0_43319537","FMq3HVd2UJ","if0_43319537_snrm9427_ecommerce",3306);
-
-if (!$con) {
-    die("Koneksi database gagal.");
-}
+<?php 
+$con=mysqli_connect("localhost","root","");//host,username,password
+mysqli_select_db($con, "snrm9427_ecommerce");
 ?>
