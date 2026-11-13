@@ -101,6 +101,29 @@ ul li {
     list-style: outside none none;
 }
 
+/* Return & Exchange Policy */
+.return-list {
+    padding-left: 0 !important;
+    margin: 15px 0 20px !important;
+}
+
+.return-list li {
+    list-style: none !important;
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.return-list li::before {
+    content: "\2022";
+    position: absolute;
+    left: 5px;
+    top: 0;
+    font-size: 18px;
+    color: #3a3a3a;
+}
+
 img {
     height: auto;
     max-width: 100%;
@@ -2176,4 +2199,46 @@ img {
     width:450px;
     height:500px;
     float:left;
+}
+
+/* Pilihan ukuran */
+.size-title {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.size-picker input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.size-picker label {
+    display: inline-block;
+    min-width: 62px;
+    height: 62px;
+    line-height: 58px;
+    padding: 0 12px;
+    margin: 0 8px 8px 0;
+    border: 2px solid #000;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s;
+}
+.size-picker label:hover {
+    border-color: #ff084e;
+    color: #ff084e;
+}
+.size-picker input[type="radio"]:checked + label {
+    background: #ff084e;
+    border-color: #ff084e;
+    color: #fff;
+}
+
+.widget.size .widget-desc ul li a.active {
+    background: #ff084e;
+    border-color: #ff084e;
+    color: #fff;
 }

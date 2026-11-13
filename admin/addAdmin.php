@@ -23,9 +23,6 @@ if(isset($_POST['submit_Admin']))
         $cekEmail=mysqli_query($con,"select * from user where email='".$_POST['email']."'");
         if(mysqli_num_rows($cekEmail)==0)
         {
-            //email belum ada di table user
-            
-            //insert data
             $insert=mysqli_query($con, "insert into user (email, nama, password, telepon, alamat, type, status) values ('".$_POST['email']."','".$_POST['nama']."', '".$_POST['password']."', '".$_POST['telepon']."','".$_POST['alamat']."','administrator', 'active')");
 
             if($insert==true)
@@ -39,7 +36,6 @@ if(isset($_POST['submit_Admin']))
         }
         else
         {
-            //email sudah ada di table user
             $pesan='Email sudah pernah terdaftar';
         }
     }
@@ -54,12 +50,8 @@ if(isset($_POST['submit_Admin']))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="img/core-img/favicon.ico">
-
-    <!-- Core Style CSS -->
     <link rel="stylesheet" href="css/core-style.css">
     <link rel="stylesheet" href="style.css">
-
-    <!-- Responsive CSS -->
     <link href="css/responsive.css" rel="stylesheet">
 </head>
 
@@ -69,6 +61,8 @@ if(isset($_POST['submit_Admin']))
         <div id="header">
             <?php include 'header.php'; ?>
         </div>
+
+        <section class="single_product_details_area section_padding_0_100">
             <div class="container">
                 <div class="row">
                         <div class="page-heading">
@@ -106,22 +100,21 @@ if(isset($_POST['submit_Admin']))
                                         <?php echo @$pesan; ?>
                                         </div>
 
-                                         <div class="col-md-6">
-                                                <input type="submit" name="submit_Admin" class="btn karl-btn" value="Submit">
-                                                &nbsp;&nbsp;
-                                                <input type="reset" name="reset"  class="btn karl-btn" value="Reset">
+                                        <div class="col-md-6">
+                                            <input type="submit" name="submit_Admin" class="btn karl-btn" value="Submit">
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <input type="reset" name="reset"  class="btn karl-btn" value="Reset">
                                         </div>
                                     </div>
                                 </form>
-
                         </div>
                 </div>
             </div>
-    </div>
-
-    <div id="footer">
-        <?php include 'footer.php'; ?>
-    </div>
+            <br>
+            <?php include 'footer.php'; ?>
+        </section>
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->

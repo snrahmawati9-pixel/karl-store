@@ -23,10 +23,7 @@ if(isset($_POST['submit_Member']))
         $cekEmail=mysqli_query($con,"select * from user where email='".$_POST['email']."'");
         if(mysqli_num_rows($cekEmail)==0)
         {
-            //email belum ada di table user
-            
-            //insert data
-            $insert=mysqli_query($con, "insert into user (email, nama, password, telepon, alamat, type, status) values ('".$_POST['email']."','".$_POST['nama']."', '".$_POST['password']."', '".$_POST['telepon']."','".$_POST['alamat']."','administrator', 'active')");
+            $insert=mysqli_query($con, "insert into user (email, nama, password, telepon, alamat, type, status) values ('".$_POST['email']."','".$_POST['nama']."', '".$_POST['password']."', '".$_POST['telepon']."','".$_POST['alamat']."','member', 'active')");
 
             if($insert==true)
             {
@@ -69,6 +66,8 @@ if(isset($_POST['submit_Member']))
         <div id="header">
             <?php include 'header.php'; ?>
         </div>
+
+        <section class="single_product_details_area section_padding_0_100">
             <div class="container">
                 <div class="row">
                         <div class="page-heading">
@@ -106,20 +105,22 @@ if(isset($_POST['submit_Member']))
                                         <?php echo @$pesan; ?>
                                         </div>
 
-                                         <div class="col-md-6">
-                                                <input type="submit" name="submit_Member" class="btn karl-btn" value="Submit">
-                                                &nbsp;&nbsp;
-                                                <input type="reset" name="reset"  class="btn karl-btn" value="Reset">
+                                        <div class="col-md-6">
+                                            <input type="submit" name="submit_Member" class="btn karl-btn" value="Submit">
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <input type="reset" name="reset"  class="btn karl-btn" value="Reset">
                                         </div>
                                     </div>
                                 </form>
-
                         </div>
                 </div>
             </div>
+        </section>
+         <?php require_once 'footer.php'; ?>
     </div>
 
-        <?php require_once 'footer.php'; ?>
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->

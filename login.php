@@ -65,12 +65,17 @@ if (isset($_POST['submit_Login']))
    
     <div id="wrapper">
         <?php require_once 'header.php'; ?>
+
+        <div class="breadcumb_area">
+            <div class="container">
+                <h2><center>PLEASE LOGIN YOUR ACCOUNT</center></h2><br>
+            </div>
+        </div>
+
+    <section class="single_product_details_area section_padding_0_100">
             <div class="container">
                 <div class="row">
                         <div class="page-heading">
-                            <h5><center>Please Login your account</center></h5>
-                                <div class="line" align="center"></div>
-    
                                 <form action="#" method="post">
                                     <div class="row">
                                         <div class="col-12 mb-3"">
@@ -94,21 +99,27 @@ if (isset($_POST['submit_Login']))
                                                     }
                                                 ?>    
 
-                                         <div class="col-md-6 mb-3">
-                                                <input type="submit" name="submit_Login" class="btn karl-btn" value="Login">
-                                                &nbsp;&nbsp;
-                                                <input type="reset" name="reset"  class="btn karl-btn" value="Reset">
+                                         <div class="col-12 mb-3">
+                                            <div class="row">
+                                                <div class="col-6 mb-2">
+                                                    <input type="submit" name="submit_Login" class="btn karl-btn" style="width:100%;" value="Login">
+                                                </div>
+                                                <div class="col-6 mb-2">
+                                                    <input type="reset" name="reset" class="btn karl-btn" style="width:100%;" value="Reset">
+                                                </div>
+                                                <div class="col-6 mb-2">
+                                                    <a href="forgetPassword.php" class="btn karl-btn" style="width:100%;">Forget Password</a>
+                                                </div>
+                                            </div>
                                         </div>
                                      </div>
                                 </form>
                         </div>
                     </div>
                 </div>
-    </div>
-       
-        <?php require_once 'footer.php'; ?>
- 
-    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+        </section>
+         <?php require_once 'footer.php'; ?>
+    </div> 
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
     <script src="js/popper.min.js"></script>
@@ -118,7 +129,7 @@ if (isset($_POST['submit_Login']))
     <script src="js/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
-
 </body>
+   
 
 </html>

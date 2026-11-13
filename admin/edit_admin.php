@@ -45,10 +45,21 @@ $rowData=mysqli_fetch_array($data);
         <div id="header">
             <?php include 'header.php'; ?>
         </div>
+
+        <section class="top-discount-area d-md-flex align-items-center">
+            <div class="single-discount-area">
+            </div>
+            <div class="single-discount-area">
+            </div>
+            <div class="single-discount-area">
+            </div>
+        </section>
+
+            <section class="single_product_details_area section_padding_0_100">
             <div class="container">
                 <div class="row">
                         <div class="page-heading">
-                            <h5><center>Edit admin <?php echo @$_GET['id'] ?></center></h5>
+                            <h4><center>Edit Admin <?php echo @$_GET['id'] ?></center></h4>
                             <div class="line"></div>
 
                                 <form action="#" method="post">
@@ -101,23 +112,22 @@ $rowData=mysqli_fetch_array($data);
                                         <?php echo @$pesan; ?>
                                         </div>
 
-                                         <div class="col-md-6">
+                                        <div class="col-md-6">
                                                 <input type="submit" name="submit_Edit" class="btn karl-btn" value="Submit">
-                                                &nbsp;&nbsp;
+                                        </div>
+
+                                        <div class="col-md-6">
                                                 <input type="reset" name="reset"  class="btn karl-btn" value="Reset">
                                         </div>
                                     </div>
                                 </form>
-
                         </div>
                 </div>
             </div>
-    </div>
-
-    <div id="footer">
-        <?php include 'footer.php'; ?>
-    </div>
-       
+                <br>
+                    <?php include 'footer.php'; ?>
+        </section> 
+    </div>      
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->

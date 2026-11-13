@@ -52,6 +52,8 @@ if (isset($_POST['submit_Categori']))
         <div id="header">
             <?php include 'header.php'; ?>
         </div>
+
+        <section class="single_product_details_area section_padding_0_100">
             <div class="container">
                 <div class="row">
                         <div class="page-heading">
@@ -82,21 +84,20 @@ if (isset($_POST['submit_Categori']))
                                         <?php echo @$pesan; ?>
                                         </div>
 
-                                         <div class="col-md-6">
-                                                <input type="submit" name="submit_Categori" class="btn karl-btn" value="Submit Categori">
-                                                &nbsp;&nbsp;
-                                                <input type="reset" name="reset"  class="btn karl-btn" value="Reset">
+                                        <div class="col-md-6">
+                                            <input type="submit" name="submit_Categori" class="btn karl-btn" value="Submit Categori">
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <input type="reset" name="reset"  class="btn karl-btn" value="Reset">
                                         </div>
                                     </div>
                                 </form>
-
-                            </div>
+                        </div>
                 </div>
             </div>
-    </div>
-
-    <div id="footer">
-        <?php include 'footer.php'; ?>
+        </section>
+            <?php include 'footer.php'; ?>
     </div>
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>

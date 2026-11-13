@@ -25,15 +25,31 @@ if(isset($_GET['id']))
             <?php include 'header.php'; ?>
         </div>
 
+        <section class="top-discount-area d-md-flex align-items-center">
+            <div class="single-discount-area">
+            </div>
+            <div class="single-discount-area">
+            </div>
+            <div class="single-discount-area">
+            </div>
+        </section>
+
             <div class="container">
                 <div class="page-heading">
-                        <h4><center>DATA PRODUCT</center></h4>
+                        <h4><center>Data Product</center></h4>
                     <div class="tambah">
                         <a href="addProduct.php"><center>Tambah Product</center></a>
-                      
                      </div>
-                
-                        <div class="line"></div>
+                     <div id="search" align="right">
+                        <form method="post" action="product.php?page=1">
+                            <input type="text" name="keyword" id="keyword" value="<?php echo @$_POST['keyword'] ?>" />
+                            &nbsp;&nbsp;
+                            <input type="submit" name="submitSearch" class="search" value="Search" />
+                        </form>
+                    </div>
+                </div>
+               
+                <div class="line"></div>
                
                     <table class="dataField">
                             <tr class="bgJudul judulData">
@@ -51,16 +67,16 @@ if(isset($_GET['id']))
                             </tr>
                             <?php 
                             $a=1;
-                            
-                            //$data=mysqli_query($con, "select * from product"); 
                             if(empty($_GET['page']))
                             {
                                 $_GET['page']=1;
                             }
              
                             $hal=($_GET['page']*5)-5;
-                            $data=mysqli_query($con, "select * from product a left join categori b on a.categori_id=b.categori_id order by a.product_id desc limit $hal,5");
-                            
+                            $k = mysqli_real_escape_string($con, @$_REQUEST['keyword']);
+                            $where = "where a.product_nama like '%$k%' or a.product_id like '%$k%' or b.categori_nama like '%$k%' or b.categori_model like '%$k%'";
+                            $data=mysqli_query($con, "select * from product a left join categori b on a.categori_id=b.categori_id $where order by a.product_id desc limit $hal,5");
+                                                        
                             while ($rowData=mysqli_fetch_array($data))
                             {
                                 if ($a%2 ==0)
@@ -82,8 +98,7 @@ if(isset($_GET['id']))
                                     </td>
                                     <td><?php echo $a; ?></td>
                                     <td>
-                                        <img src="../product/<?php echo $rowData['product_gambar']; ?>" width="100">
-                                        
+                                        <img src="../product/<?php echo $rowData['product_gambar']; ?>?v=<?php echo @filemtime('../product/'.$rowData['product_gambar']); ?>" width="100">
                                     </td>
                                     <td>
                                          <a href="dataProduct.php?id=<?php echo $rowData['product_id']; ?>">
@@ -178,10 +193,6 @@ if(isset($_GET['id']))
 
                 </div>
             </div>
-        
-
-           
-    
     <div id="footer">
         <?php include 'footer.php'; ?>
     </div>    

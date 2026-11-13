@@ -1,5 +1,4 @@
 <?php 
-//cek tombol sudah diklik atau belum
 if (isset($_POST['submit_Register'])) 
 {
     //koneksi
@@ -44,57 +43,58 @@ if (isset($_POST['submit_Register']))
    
     <div id="wrapper">
         <?php require_once 'header.php'; ?>
+        <div class="breadcumb_area">
+            <div class="container">
+                <h2><center>PLEASE COMPLATE THIS FORM FOR LOGIN</center></h2><br>
+            </div>
+        </div>
+
+        <section class="single_product_details_area section_padding_0_100">
             <div class="container">
                 <div class="row">
-                        <div class="page-heading">
-                            <h5><center>please complate this form for LOGIN</center></h5>
-                            <div class="line"></div>
-
-                                <form action="#" method="post">
-                                    <div class="row">
-                                        <div class="col-12 col-md-6 mb-3">
-                                            <label for="email">Email</label>
-                                            <input type="text" class="form-control" name="email"  id="email" placeholder="Masukan email" autofocus>
-                                        </div>
-                                  
-                                         <div class="col-12 col-md-6  mb-3">
-                                            <label for="nama">Nama</label>
-                                            <input type="text" class="form-control" name="nama" id="nama"  placeholder="Masukan nama">
-                                        </div>
-
-                                        <div class="col-12 col-md-6 mb-3">
-                                            <label for="password">Password</label>
-                                            <input type="password" class="form-control" name="password" id="password" placeholder="Masukan password">
-                                        </div>
-
-                                         <div class="col-12 col-md-6 mb-3">
-                                            <label for="telepon">Telepon</label>
-                                            <input type="text" class="form-control" name="telepon" id="telepon"  placeholder="Masukan NO HP">
-                                        </div>
-                                        
-                                        <div class="col-12 mb-3">
-                                            <label for="alamat">Alamat</label>
-                                            <textarea class="form-control" name="alamat" name="alamat" id="alamat" placeholder="Masukan alamat"></textarea>
-                                        </div>
-
-                                        <div class="col-12 mb-3">
-                                        <?php echo @$pesan; ?>
-                                        </div>
-
-                                         <div class="col-md-6 mb-3">
-                                                <input type="submit" name="submit_Register" class="btn karl-btn" value="Submit">
-                                                &nbsp;&nbsp;
-                                                <input type="reset" name="reset"  class="btn karl-btn" value="Reset">
-                                        </div>
+                         <form action="#" method="post">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label for="email">Email</label>
+                                        <input type="text" class="form-control" name="email"  id="email" placeholder="Masukan email" autofocus>
                                     </div>
-                                </form>
+                                  
+                                    <div class="col-12 col-md-6  mb-3">
+                                        <label for="nama">Nama</label>
+                                        <input type="text" class="form-control" name="nama" id="nama"  placeholder="Masukan nama">
+                                    </div>
 
-                        </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control" name="password" id="password" placeholder="Masukan password">
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label for="telepon">Telepon</label>
+                                        <input type="text" class="form-control" name="telepon" id="telepon"  placeholder="Masukan NO HP">
+                                    </div>
+                                        
+                                    <div class="col-12 mb-3">
+                                        <label for="alamat">Alamat</label>
+                                        <textarea class="form-control" name="alamat" name="alamat" id="alamat" placeholder="Masukan alamat"></textarea>
+                                    </div>
+
+                                    <div class="col-12 mb-3">
+                                    <?php echo @$pesan; ?>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <input type="submit" name="submit_Register" class="btn karl-btn" value="Submit">
+                                        &nbsp;&nbsp;
+                                        <input type="reset" name="reset"  class="btn karl-btn" value="Reset">
+                                    </div>
+                                </div> 
+                            </form>
+                    </div>
                 </div>
-            </div>
-    </div>
-
+        </section>
         <?php require_once 'footer.php'; ?>
+    </div>
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->

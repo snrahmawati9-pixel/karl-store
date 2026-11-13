@@ -14,12 +14,8 @@ $rowData=mysqli_fetch_array($data);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="img/core-img/favicon.ico">
-
-    <!-- Core Style CSS -->
     <link rel="stylesheet" href="css/core-style.css">
     <link rel="stylesheet" href="style.css">
-
-    <!-- Responsive CSS -->
     <link href="css/responsive.css" rel="stylesheet">
 </head>
 
@@ -29,10 +25,20 @@ $rowData=mysqli_fetch_array($data);
        <div id="header">
             <?php include 'header.php'; ?>
         </div>
+
+        <section class="top-discount-area d-md-flex align-items-center">
+            <div class="single-discount-area">
+            </div>
+            <div class="single-discount-area">
+            </div>
+            <div class="single-discount-area">
+            </div>
+        </section>
+
             <div class="container">
                 <div class="row">
                         <div class="page-heading">
-                            <h5><center>data admin</center></h5>
+                            <h4><center>Data Admin/center></h4>
                             <div class="line"></div>
 
                                 <form action="#" method="post">
@@ -63,12 +69,10 @@ $rowData=mysqli_fetch_array($data);
                                         </div>
                                     </div>
                                 </form>
-
                         </div>
                 </div>
             </div>
     </div>
-
         <?php require_once 'footer.php'; ?>
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>

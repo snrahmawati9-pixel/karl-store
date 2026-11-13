@@ -3,6 +3,7 @@
                                     <div class="collapse navbar-collapse align-items-start collapse" id="karl-navbar">
                                         <ul class="navbar-nav animated" id="nav">
                                             <li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
+                                            <li class="nav-item active"><a class="nav-link" href="about.php">About</a></li>
                                             <li class="nav-item dropdown">
                                                 <a class="nav-link dropdown-toggle" href=" " id="karlDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Product</a>
                                                 <div class="dropdown-menu" aria-labelledby="karlDropdown">

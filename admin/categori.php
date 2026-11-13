@@ -2,11 +2,11 @@
 
 require_once 'session.php';
 if (isset($_GET['id']))
- {
-    $delete=mysqli_query($con, "delete from categori where categori_id='".$_GET['id']."' ");
+{
+    $id = mysqli_real_escape_string($con, $_GET['id']);
+    $delete = mysqli_query($con, "delete from categori where categori_id='$id'");
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,13 +30,32 @@ if (isset($_GET['id']))
             <?php include 'header.php'; ?>
         </div>
         
+        <section class="top-discount-area d-md-flex align-items-center">
+            <div class="single-discount-area">
+            </div>
+            <div class="single-discount-area">
+            </div>
+            <div class="single-discount-area">
+            </div>
+        </section>
+
+        <section class="single_product_details_area section_padding_0_100">
             <div class="container">
                         <div class="page-heading">
-                            <h5><center>Data Categori</center></h5>
+                            <h4><center>Data Categori</center></h4>
                                 <div class="tambah">
                                      <a href="addCategori.php"><center>Tambah Categori</center></a>
                                 
                                 </div>
+
+                                <div id="search" align="right">
+                                    <form method="post" action="#">
+                                        <input type="text" name="keyword" id="keyword" value="<?php echo @$_POST['keyword'] ?>" />
+                                        &nbsp;&nbsp;
+                                        <input type="submit" name="submitSearch" class = "search" value="Search" />
+                                    </form>
+                                </div>
+
                                  <div class="line" align="center"></div>
                            
                                 <table class="dataField">
@@ -50,10 +69,9 @@ if (isset($_GET['id']))
                                     </tr>
                                     <?php 
                                     $a=1;
-                   
-                                    $data=mysqli_query($con, "select * from categori"); 
-
-                                    
+                                                       
+                                    $k = mysqli_real_escape_string($con, @$_REQUEST['keyword']);
+                                    $data=mysqli_query($con, "select * from categori where categori_nama like '%$k%' or categori_id like '%$k%' or categori_model like '%$k%' order by categori_id asc");     
                                     while ($rowData=mysqli_fetch_array($data))
                                     {
                                         if ($a%2 ==0)
@@ -94,16 +112,11 @@ if (isset($_GET['id']))
                                     }
                                     ?>
                                 </table>
-                         </div>
-                       
-             </div>
+                         </div>     
+                 </div>
+        </section>
+         <?php include 'footer.php';?>
     </div>
-       
-    <div id="footer">
-        <?php include 'footer.php';?>
-    </div>
-        
- 
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->

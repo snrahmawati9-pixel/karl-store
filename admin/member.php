@@ -27,7 +27,7 @@ if(isset($_GET['id']))
 
             <div class="container">
                 <div class="page-heading">
-                        <h4><center>DATA MEMBER</center></h4>
+                        <h4><center>Data Member</center></h4>
                     <div class="tambah">
                         <a href="addMember.php"><center>Tambah Member</center></a>
                       
@@ -46,7 +46,7 @@ if(isset($_GET['id']))
 
           
                 <table class="dataField">
-                    <tr class="bgJudul judulData page-heading ">
+                    <tr class="bgJudul judulData">
                         <td width="50"></td>
                         <td width="40"><h5>No</h5></td>
                         <td><h5>Nama</h5></td>
@@ -102,11 +102,7 @@ if(isset($_GET['id']))
                      }
                          ?>
                 </table>
-          
         </div>
-
-    
-
         <?php require_once 'footer.php'; ?>
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>

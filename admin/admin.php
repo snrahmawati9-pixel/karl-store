@@ -29,6 +29,7 @@ if (isset($_GET['id']))
             <?php include 'header.php'; ?>
         </div>
         
+        <section class="single_product_details_area section_padding_0_100">
             <div class="container">
                         <div class="page-heading">
                             <h5><center>Data admin</center></h5>
@@ -102,18 +103,12 @@ if (isset($_GET['id']))
                                         $a++;
                                     }
                                     ?>
-
                                 </table>
-                         </div>
-                       
-             </div>
-    </div>
-       
-    <div id="footer">
+                         </div>     
+                </div>
+       </section>
         <?php include 'footer.php';?>
     </div>
-        
- 
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->

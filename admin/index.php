@@ -9,12 +9,7 @@
     
     <div id="wrapper">
         <?php require_once 'header.php'; ?>
-       
-
-        
-       
-        </div>
-        <!-- ****** Checkout Area End ****** -->
+    </div>
         <?php require_once 'footer.php'; ?>
         
     </div>
