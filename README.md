@@ -1,180 +1,209 @@
 # Karl Store – Website E-Commerce Fashion
 
-Karl Store merupakan website e-commerce sederhana yang dikembangkan sebagai platform penjualan produk fashion secara online, seperti pakaian, tas, aksesori, sepatu dan sandal. Website ini memungkinkan pengguna untuk melihat katalog produk, memilih ukuran, mengelola keranjang belanja, melakukan checkout, serta mengelola informasi akun.
+Karl Store merupakan website e-commerce sederhana yang dikembangkan untuk penjualan produk fashion secara online. Website ini menyediakan berbagai kategori produk, seperti pakaian, tas, aksesori, sepatu, dan sandal.
 
-Website ini juga dilengkapi dengan halaman admin untuk mengelola data produk dan kategori.
+Pengguna dapat melihat katalog produk, memilih ukuran dan jumlah produk, menambahkan produk ke keranjang, melakukan checkout, serta mengelola informasi akun. Website ini juga dilengkapi dengan halaman administrator untuk mengelola produk dan kategori.
 
-Project ini dikembangkan menggunakan PHP, MySQL, HTML, CSS, dan JavaScript.
+## Live Demo
 
-## Demo Website
+**Website:** https://karl-store.infinityfreeapp.com/
 
-Website Karl Store dapat diakses secara online melalui tautan berikut:
-[Kunjungi Karl Store Fashion](https://karl-store.infinityfreeapp.com/)
+## Website Preview
 
-## Fitur Website
+Contoh halaman yang dapat ditampilkan:
+- Homepage
+- Product Detail
+- Shopping Cart
+- Checkout
+- My Account
+- Admin Dashboard
 
-### 1. Autentikasi Pengguna
-- Registrasi akun pengguna.
-- Login pengguna.
-- Fitur lupa password.
+## Key Features
 
-### 2. Katalog Produk
-- Menampilkan daftar produk fashion.
-- Melihat berbagai pilihan produk.
-- Menampilkan informasi produk yang tersedia.
+### 1. User Authentication
+- User registration
+- Login and logout
+- Forgot password
 
-### 3. Detail Produk
-- Menampilkan gambar dan informasi produk.
-- Menampilkan harga dan stok produk.
-- Memilih ukuran produk Bajue (S, M, L, XL).
-- Memilih ukuran produk sepatu dan sandal (36, 37, 38, 39, 40, 41)
-- Mengatur jumlah produk yang ingin dibeli.
-- Melihat informasi produk.
-- Melihat informasi pengiriman dan kebijakan pengembalian barang.
+### 2. Product Catalog
+- Menampilkan daftar produk berdasarkan kategori.
+- Menampilkan informasi produk, harga, dan gambar.
+- Menyediakan navigasi kategori produk.
 
-### 4. Keranjang Belanja (Shopping Cart)
+### 3. Product Detail
+- Menampilkan detail produk, gambar, harga, dan stok.
+- Memilih ukuran pakaian (S, M, L, XL).
+- Memilih ukuran sepatu dan sandal (36–41).
+- Mengatur jumlah produk yang akan dibeli.
+- Menampilkan informasi pengiriman dan pengembalian produk.
+
+### 4. Shopping Cart
 - Menampilkan produk yang ditambahkan ke keranjang.
-- Menampilkan ukuran, harga, kuantitas, dan total harga produk.
-- Menghapus produk tertentu dari keranjang.
-- Mengosongkan seluruh keranjang belanja.
-- Melanjutkan aktivitas belanja.
+- Mengatur jumlah produk dan pilihan ukuran.
+- Menghapus produk atau mengosongkan keranjang.
 - Memilih metode pengiriman:
   - Next Day Delivery
   - Standard Delivery
   - Personal Pickup
-- Menghitung subtotal, biaya pengiriman, dan total belanja.
+- Menghitung subtotal, biaya pengiriman, dan total pembayaran.
 
 ### 5. Checkout
-- Mengisi informasi alamat penagihan:
-  - Nama
-  - Alamat
-  - Nomor telepon
-  - Email
+- Mengisi informasi billing, seperti nama, alamat, nomor telepon, dan email.
 - Menampilkan ringkasan pesanan.
-- Menampilkan produk, ukuran, dan jumlah pesanan.
-- Menghitung subtotal, biaya pengiriman, dan total pembayaran.
 - Memilih metode pembayaran:
   - Cash on Delivery (COD)
   - Direct Bank Transfer
-  - Bank Mandiri
+  - Mandiri
   - BCA
   - BNI
   - BRI
+- Menampilkan total pembayaran sebelum pesanan dikonfirmasi.
 
-### 6. Konfirmasi Pesanan (Order Confirmation)
-- Menampilkan notifikasi pesanan berhasil.
-- Menampilkan ID pesanan.
-- Menampilkan metode pembayaran yang dipilih.
-- Menampilkan informasi rekening tujuan transfer.
-- Menampilkan jumlah pembayaran yang harus dibayarkan.
+### 6. Order Confirmation
+- Menampilkan notifikasi keberhasilan pemesanan.
+- Menampilkan nomor pesanan (Order ID).
+- Menampilkan metode pembayaran dan informasi rekening apabila menggunakan transfer bank.
+- Menampilkan jumlah pembayaran.
 
 ### 7. My Account
-- Melihat informasi akun pengguna:
-  - Email
-  - Nama
-  - Nomor telepon
-  - Password (disamarkan)
-  - Alamat
-- Mengubah informasi profil pengguna.
-- Mengganti password:
-  - Password lama
-  - Password baru
-  - Konfirmasi password baru
+- Menampilkan informasi profil pengguna, seperti email, nama, nomor telepon, dan alamat.
+- Mengubah informasi profil.
+- Mengubah password dengan verifikasi password lama dan konfirmasi password baru.
 
-### 8. Halaman Informasi dan Bantuan
+### 8. Information Pages
 - About
-- Frequently Asked Questions (FAQ)
+- FAQ
 - Returns
 - Shipping Information
 - Our Policies
 
-### 9. Fitur Admin
-- Login dan logout admin.
-- Mengelola data produk.
-- Menambah, mengubah, dan menghapus produk.
+### 9. Admin Dashboard
+- Admin login and logout.
+- Menambahkan, melihat, mengubah, dan menghapus produk.
 - Mengelola kategori produk.
-- Melihat informasi produk, stok, harga, dan status produk.
+- Mengelola informasi produk, termasuk harga, stok, dan status produk.
 
-## Teknologi yang Digunakan
+## Technologies Used
 
-| Teknologi | Kegunaan |
-|---|---|
-| PHP | Pemrograman sisi server |
-| MySQL | Pengelolaan database |
-| HTML5 | Struktur halaman website |
-| CSS3 | Pengaturan tampilan website |
-| JavaScript | Menambahkan interaktivitas |
-| Bootstrap | Membuat tampilan responsif |
-| jQuery | Mendukung fungsi JavaScript |
-| XAMPP | Lingkungan pengembangan lokal |
-| phpMyAdmin | Pengelolaan database |
+- **Backend:** PHP
+- **Database:** MySQL
+- **Frontend:** HTML5, CSS3, JavaScript, Bootstrap
+- **Libraries:** jQuery
+- **Development Tools:** XAMPP, phpMyAdmin
+- **Version Control:** Git, GitHub
 
-## Struktur Project
+## Database
+
+Website ini menggunakan MySQL sebagai sistem pengelolaan database untuk menyimpan dan mengelola data yang dibutuhkan dalam proses e-commerce, seperti data pengguna, produk, kategori, keranjang belanja, dan transaksi.
+
+## Project Structure
 
 ```text
 karl-store/
 │
-├── admin/                  # Halaman dan pengelolaan admin
-├── css/                    # File stylesheet
-├── database/               # File database SQL
-├── fonts/                  # File font
-├── img/                    # Gambar dan aset website
-├── js/                     # File JavaScript
-├── product/                # Gambar produk
+├── admin/                          # Admin dashboard
+│   ├── css/                        # Admin stylesheets
+│   ├── fonts/                      # Admin font assets
+│   ├── images/                     # Admin interface images
+│   ├── img/
+│   │   ├── bg-img/                 # Background images
+│   │   ├── core-img/               # Logo and favicon
+│   │   └── product-img/            # Product images
+│   ├── js/                         # Admin JavaScript files
+│   │   └── jquery/
+│   ├── addAdmin.php                # Add administrator
+│   ├── addCategori.php             # Add category
+│   ├── addMember.php               # Add member
+│   ├── addProduct.php              # Add product
+│   ├── admin.php                   # Admin page
+│   ├── categori.php                # Category management
+│   ├── dataAdmin.php               # Administrator data
+│   ├── editCategori.php             # Edit category
+│   ├── editMember.php               # Edit member
+│   ├── editPengiriman.php           # Edit shipping information
+│   ├── editProduct.php              # Edit product
+│   ├── edit_admin.php               # Edit administrator
+│   ├── footer.php
+│   ├── header.php
+│   ├── index.php                   # Admin dashboard
+│   ├── koneksi.php                 # Admin database connection
+│   ├── logout.php
+│   ├── member.php                  # Member management
+│   ├── menu.php
+│   ├── myaccount.php               # Admin account
+│   ├── ourpolicies.php
+│   ├── pengiriman.php              # Shipping management
+│   ├── product.php                 # Product management
+│   ├── session.php
+│   └── title.php
 │
-├── about.php               # Halaman About
-├── accessories.php         # Kategori aksesori
-├── bag.php                 # Kategori tas
-├── bags.php                # Halaman produk tas
-├── cart.php                # Keranjang belanja
-├── cat.php                 # Halaman kategori
-├── categories.php          # Daftar kategori
-├── checkout.php            # Halaman checkout
-├── detail_product.php      # Detail produk
-├── dresses.php             # Kategori dress
-├── faq.php                 # Halaman FAQ
-├── footer.php              # Bagian footer
-├── forgetPassword.php      # Fitur lupa password
-├── header.php              # Bagian header
-├── highheel.php            # Kategori high heels
-├── iklan.php               # Bagian iklan
-├── index.php               # Halaman utama
-├── kaos.php                # Kategori kaos
-├── kemeja.php              # Kategori kemeja
-├── koneksi.php             # Koneksi database
-├── konfirmasiorder.php     # Konfirmasi pesanan
-├── login.php               # Halaman login
-├── login2.php              # File login tambahan
-├── logout.php              # Proses logout
-├── menu.php                # Menu navigasi
-├── menu2.php               # Menu navigasi tambahan
-├── menu3.php               # Menu navigasi tambahan
-├── menu4.php               # Menu navigasi tambahan
-├── menu5.php               # Menu navigasi tambahan
-├── menu6.php               # Menu navigasi tambahan
-├── myaccount.php           # Halaman akun pengguna
-├── notifcart.php           # Notifikasi keranjang
-├── ourpolicies.php         # Kebijakan toko
-├── product.php             # Halaman produk
-├── prosesOrder.php         # Proses pemesanan
-├── purses.php              # Kategori purses
-├── register.php            # Registrasi pengguna
-├── return.php              # Informasi pengembalian
-├── sandal.php              # Kategori sandal
-├── sepatu.php              # Kategori sepatu
-├── session.php             # Pengelolaan session
-├── shippinginfo.php        # Informasi pengiriman
-├── shoes.php               # Kategori sepatu
-├── style.css               # File CSS tambahan
-├── title.php               # Pengaturan title website
-├── vintage.php             # Kategori vintage
-└── womenwear.php           # Kategori pakaian wanita
+├── css/                            # Main website stylesheets
+├── database/
+│   └── snrm9427_ecommerce.sql      # MySQL database
+├── fonts/                          # Font assets
+├── img/
+│   ├── bg-img/                     # Background images
+│   ├── core-img/                   # Logo and favicon
+│   └── product-img/                # Product images
+├── js/                             # Main JavaScript files
+│   └── jquery/
+├── product/                        # Product image uploads
+│
+├── about.php                       # About page
+├── accessories.php                 # Accessories category
+├── bag.php                         # Bag page
+├── bags.php                        # Bags category
+├── cart.php                        # Shopping cart
+├── cat.php                         # Category page
+├── categories.php                  # Category navigation
+├── checkout.php                    # Checkout page
+├── detail_product.php              # Product detail
+├── dresses.php                     # Dresses category
+├── faq.php                         # FAQ page
+├── footer.php                      # Website footer
+├── forgetPassword.php              # Forgot password
+├── header.php                      # Website header
+├── highheel.php                    # High heels category
+├── iklan.php                       # Advertisement section
+├── index.php                       # Homepage
+├── kaos.php                        # T-shirt category
+├── kemeja.php                      # Shirt category
+├── koneksi.php                     # Database connection
+├── konfirmasiorder.php             # Order confirmation
+├── login.php                       # User login
+├── login2.php                      # Login-related page
+├── logout.php                      # User logout
+├── menu.php                        # Navigation menu
+├── menu2.php
+├── menu3.php
+├── menu4.php
+├── menu5.php
+├── menu6.php
+├── myaccount.php                   # User account
+├── notifcart.php                   # Cart notification
+├── ourpolicies.php                 # Store policies
+├── product.php                     # Product listing
+├── prosesOrder.php                 # Order processing
+├── purses.php                      # Purses category
+├── register.php                    # User registration
+├── return.php                      # Return information
+├── sandal.php                      # Sandals category
+├── sepatu.php                      # Shoes category
+├── session.php                     # Session management
+├── shippinginfo.php                # Shipping information
+├── shoes.php                       # Shoes category
+├── style.css                       # Additional styles
+├── title.php                       # Website title and metadata
+├── vintage.php                     # Vintage category
+├── womenwear.php                   # Women's clothing category
+└── README.md                       # Project documentation
 ```
-## Instalasi dan Konfigurasi
 
-Untuk menjalankan project ini secara lokal, ikuti langkah-langkah berikut:
+**Note:** Folder `css`, `fonts`, `img`, dan `js` berisi aset pendukung tampilan website. Folder `product` menyimpan gambar produk yang digunakan dalam katalog.
 
-1. Clone repository GitHub:
+## Installation & Configuration
+
+1. Clone repository ini:
 
    ```bash
    git clone https://github.com/snrahmawati9-pixel/karl-store.git
@@ -184,32 +213,24 @@ Untuk menjalankan project ini secara lokal, ikuti langkah-langkah berikut:
 
 3. Jalankan Apache dan MySQL melalui XAMPP Control Panel.
 
-4. Buka phpMyAdmin melalui browser:
+4. Buat database baru melalui phpMyAdmin.
 
-   ```text
-   http://localhost/phpmyadmin
-   ```
+5. Import file database yang tersedia di folder `database`.
 
-5. Buat database MySQL baru.
+6. Sesuaikan konfigurasi koneksi database pada file `koneksi.php`.
 
-6. Import file SQL yang tersedia di dalam folder `database/`.
-
-7. Sesuaikan konfigurasi koneksi database pada file `koneksi.php` dengan pengaturan MySQL lokal.
-
-8. Buka website melalui browser:
+7. Buka website melalui browser:
 
    ```text
    http://localhost/karl-store/
    ```
 
-## Tujuan Project
+## Project Development
 
-Project ini dikembangkan sebagai sarana pembelajaran dan penerapan keterampilan dalam pengembangan website, pemrograman PHP, pengelolaan database, serta pembuatan aplikasi e-commerce sederhana.
-
-Melalui project ini, saya memperoleh pengalaman dalam membangun halaman website dinamis, mengelola database relasional, menerapkan autentikasi pengguna, serta mengembangkan berbagai fitur dasar e-commerce.
+Project ini dikembangkan sebagai sarana penerapan dan pengembangan keterampilan web development menggunakan PHP dan MySQL. Pengembangan mencakup implementasi fitur e-commerce, pengelolaan database, autentikasi pengguna, serta pengelolaan produk melalui halaman administrator.
 
 ## Author
 
-**Ama**
+**Rahmawati**
 
-GitHub: [@snrahmawati9-pixel](https://github.com/snrahmawati9-pixel)
+GitHub: https://github.com/snrahmawati9-pixel
