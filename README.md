@@ -9,8 +9,7 @@ Project ini dikembangkan menggunakan PHP, MySQL, HTML, CSS, dan JavaScript.
 ## Demo Website
 
 Website Karl Store dapat diakses secara online melalui tautan berikut:
-
-**Live Demo:** https://karl-store.infinityfreeapp.com/
+[Kunjungi Karl Store Fashion](https://karl-store.infinityfreeapp.com/)
 
 ## Fitur Website
 
