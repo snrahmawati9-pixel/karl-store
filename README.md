@@ -26,7 +26,8 @@ Website Karl Store dapat diakses secara online melalui tautan berikut:
 ### 3. Detail Produk
 - Menampilkan gambar dan informasi produk.
 - Menampilkan harga dan stok produk.
-- Memilih ukuran produk (S, M, L, XL).
+- Memilih ukuran produk Bajue (S, M, L, XL).
+- Memilih ukuran produk sepatu dan sandal (36, 37, 38, 39, 40, 41)
 - Mengatur jumlah produk yang ingin dibeli.
 - Melihat informasi produk.
 - Melihat informasi pengiriman dan kebijakan pengembalian barang.
