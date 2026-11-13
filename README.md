@@ -5,8 +5,7 @@ Karl Store merupakan website e-commerce sederhana yang dikembangkan untuk penjua
 Pengguna dapat melihat katalog produk, memilih ukuran dan jumlah produk, menambahkan produk ke keranjang, melakukan checkout, serta mengelola informasi akun. Website ini juga dilengkapi dengan halaman administrator untuk mengelola produk dan kategori.
 
 ## Live Demo
-
-[**Kunjungi Karl Store Website**]([https://ecommerce-hms.free.nf/](https://karl-store.infinityfreeapp.com/)
+**[Kunjungi Karl Store Fashion](https://karl-store.infinityfreeapp.com/)**
 
 ## Website Preview
 
