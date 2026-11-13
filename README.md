@@ -114,28 +114,62 @@ Website Karl Store dapat diakses secara online melalui tautan berikut:
 ```text
 karl-store/
 │
-├── admin/                  # Halaman admin
-├── css/                    # File CSS
+├── admin/                  # Halaman dan pengelolaan admin
+├── css/                    # File stylesheet
 ├── database/               # File database SQL
-├── images/                 # Gambar website
+├── fonts/                  # File font
+├── img/                    # Gambar dan aset website
 ├── js/                     # File JavaScript
+├── product/                # Gambar produk
 │
-├── koneksi.php             # Koneksi database
-├── header.php              # Bagian header website
-├── footer.php              # Bagian footer website
+├── about.php               # Halaman About
+├── accessories.php         # Kategori aksesori
+├── bag.php                 # Kategori tas
+├── bags.php                # Halaman produk tas
+├── cart.php                # Keranjang belanja
+├── cat.php                 # Halaman kategori
+├── categories.php          # Daftar kategori
+├── checkout.php            # Halaman checkout
+├── detail_product.php      # Detail produk
+├── dresses.php             # Kategori dress
+├── faq.php                 # Halaman FAQ
+├── footer.php              # Bagian footer
+├── forgetPassword.php      # Fitur lupa password
+├── header.php              # Bagian header
+├── highheel.php            # Kategori high heels
+├── iklan.php               # Bagian iklan
 ├── index.php               # Halaman utama
+├── kaos.php                # Kategori kaos
+├── kemeja.php              # Kategori kemeja
+├── koneksi.php             # Koneksi database
+├── konfirmasiorder.php     # Konfirmasi pesanan
 ├── login.php               # Halaman login
-├── register.php            # Halaman registrasi
-├── detail_product.php      # Halaman detail produk
-├── cart.php                # Halaman keranjang belanja
+├── login2.php              # File login tambahan
+├── logout.php              # Proses logout
+├── menu.php                # Menu navigasi
+├── menu2.php               # Menu navigasi tambahan
+├── menu3.php               # Menu navigasi tambahan
+├── menu4.php               # Menu navigasi tambahan
+├── menu5.php               # Menu navigasi tambahan
+├── menu6.php               # Menu navigasi tambahan
 ├── myaccount.php           # Halaman akun pengguna
-├── about.php               # Halaman tentang kami
-├── faq.php                 # Halaman pertanyaan umum
-├── return.php              # Halaman pengembalian barang
+├── notifcart.php           # Notifikasi keranjang
+├── ourpolicies.php         # Kebijakan toko
+├── product.php             # Halaman produk
+├── prosesOrder.php         # Proses pemesanan
+├── purses.php              # Kategori purses
+├── register.php            # Registrasi pengguna
+├── return.php              # Informasi pengembalian
+├── sandal.php              # Kategori sandal
+├── sepatu.php              # Kategori sepatu
+├── session.php             # Pengelolaan session
 ├── shippinginfo.php        # Informasi pengiriman
-└── ourpolicies.php         # Kebijakan toko
+├── shoes.php               # Kategori sepatu
+├── style.css               # File CSS tambahan
+├── title.php               # Pengaturan title website
+├── vintage.php             # Kategori vintage
+└── womenwear.php           # Kategori pakaian wanita
 ```
-
 ## Instalasi dan Konfigurasi
 
 Untuk menjalankan project ini secara lokal, ikuti langkah-langkah berikut:
