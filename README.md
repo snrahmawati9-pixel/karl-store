@@ -2,7 +2,7 @@
 
 Karl Store merupakan website e-commerce sederhana yang dikembangkan untuk penjualan produk fashion secara online. Website ini menyediakan berbagai kategori produk, seperti pakaian, tas, aksesori, sepatu, dan sandal.
 
-Pengguna dapat melihat katalog produk, memilih ukuran dan jumlah produk, menambahkan produk ke keranjang, melakukan checkout, serta mengelola informasi akun. Website ini juga dilengkapi dengan halaman administrator untuk mengelola produk dan kategori.
+Pengguna dapat melihat katalog produk, memilih ukuran dan jumlah produk, menambahkan produk ke keranjang, melakukan checkout, serta mengelola informasi akun. Website ini juga dilengkapi dengan halaman administrator untuk mengelola produk dan kategori serta mengelola akun administrator dan member.
 
 ## Live Demo
 **[Kunjungi Karl Store Fashion](https://karl-store.infinityfreeapp.com/)**
