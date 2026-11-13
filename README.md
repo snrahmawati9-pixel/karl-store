@@ -6,7 +6,7 @@ Pengguna dapat melihat katalog produk, memilih ukuran dan jumlah produk, menamba
 
 ## Live Demo
 
-**Website:** https://karl-store.infinityfreeapp.com/
+[**Kunjungi Karl Store Website**]([https://ecommerce-hms.free.nf/](https://karl-store.infinityfreeapp.com/])
 
 ## Website Preview
 
