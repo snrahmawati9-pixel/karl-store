@@ -8,7 +8,6 @@ Pengguna dapat melihat katalog produk, memilih ukuran dan jumlah produk, menamba
 **[Kunjungi Karl Store Fashion](https://karl-store.infinityfreeapp.com/)**
 
 ## Website Preview
-## Website Preview
 
 Berikut merupakan beberapa tampilan halaman utama dari **Karl Store**, mulai dari penjelajahan produk, proses pembelian, hingga pengelolaan akun pengguna.
 
