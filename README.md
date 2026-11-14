@@ -9,13 +9,51 @@ Pengguna dapat melihat katalog produk, memilih ukuran dan jumlah produk, menamba
 
 ## Website Preview
 
-Contoh halaman yang dapat ditampilkan:
-- Homepage
-- Product Detail
-- Shopping Cart
-- Checkout
-- My Account
-- Admin Dashboard
+## Website Preview
+
+Berikut merupakan beberapa tampilan halaman utama dari **Karl Store**, mulai dari penjelajahan produk, proses pembelian, hingga pengelolaan akun pengguna.
+
+### 1. Product Catalog
+Halaman katalog menampilkan berbagai produk fashion yang tersedia di Karl Store, dilengkapi dengan gambar produk, nama, dan harga. Pengguna dapat menjelajahi koleksi produk yang tersedia.
+
+<p align="center">
+  <img src="screenshots/product-catalog.png" alt="Karl Store - Product Catalog" width="100%">
+</p>
+
+### 2. Product Detail
+Halaman detail produk menampilkan informasi produk secara lengkap, meliputi gambar, nama, harga, ketersediaan stok, pilihan ukuran, dan kuantitas. Pengguna dapat memilih ukuran dan jumlah produk sebelum menambahkannya ke keranjang belanja.
+
+<p align="center">
+  <img src="screenshots/product-detail.png" alt="Karl Store - Product Detail" width="100%">
+</p>
+
+### 3. Shopping Cart
+Halaman keranjang belanja menampilkan produk yang telah dipilih pengguna beserta ukuran, harga, dan kuantitas. Tersedia juga pilihan metode pengiriman serta perhitungan subtotal, biaya pengiriman, dan total pembayaran.
+
+<p align="center">
+  <img src="screenshots/shopping-cart.png" alt="Karl Store - Shopping Cart" width="100%">
+</p>
+
+### 4. Checkout
+Halaman checkout menyediakan formulir alamat penagihan dan ringkasan pesanan. Pengguna dapat memeriksa kembali detail pembelian serta memilih metode pembayaran, seperti Cash on Delivery dan Direct Bank Transfer melalui beberapa pilihan bank.
+
+<p align="center">
+  <img src="screenshots/checkout.png" alt="Karl Store - Checkout" width="100%">
+</p>
+
+### 5. Order Confirmation
+Halaman konfirmasi pesanan menampilkan informasi bahwa pesanan berhasil dibuat, termasuk ID pesanan, metode pembayaran, informasi rekening tujuan untuk pembayaran melalui transfer bank, dan jumlah pembayaran.
+
+<p align="center">
+  <img src="screenshots/order-confirmation.png" alt="Karl Store - Order Confirmation" width="100%">
+</p>
+
+### 6. My Account
+Halaman My Account memungkinkan pengguna melihat dan memperbarui informasi profil, seperti email, nama, nomor telepon, dan alamat. Tersedia juga fitur perubahan password dengan verifikasi password lama.
+
+<p align="center">
+  <img src="screenshots/my-account.png" alt="Karl Store - My Account" width="100%">
+</p>
 
 ## Key Features
 
@@ -147,7 +185,13 @@ karl-store/
 ├── js/                             # Main JavaScript files
 │   └── jquery/
 ├── product/                        # Product image uploads
-│
+├── screenshots/
+│   ├── product-catalog.png
+│   ├── product-detail.png
+│   ├── shopping-cart.png
+│   ├── checkout.png
+│   ├── order-confirmation.png
+│   └── my-account.png
 ├── about.php                       # About page
 ├── accessories.php                 # Accessories category
 ├── bag.php                         # Bag page
